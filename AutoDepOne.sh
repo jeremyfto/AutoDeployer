@@ -1,5 +1,5 @@
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-source $parent_path/config.sh
+source $parent_path/config.cfg
 #echo $IPDASH $IPDOT $KEYNAME $GITURL $PROJNAME $REPONAME
 chmod 400 $KEYNAME.pem
 ssh -T -i "$KEYNAME.pem" ubuntu@ec2-$IPDASH.us-east-2.compute.amazonaws.com <<EOF

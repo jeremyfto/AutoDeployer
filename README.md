@@ -3,8 +3,8 @@
 # 1:Start a AWS E2 Ubuntu free tier server
 # 2:Pip freeze into a requirements.txt file in your django project
 # 3:Push your project to github
-# 4:Modify the config.sh file
-# 5:Run AutoDepOne.sh
+# 4:Modify the config.cfg file
+# 5:Run AutoDepOne.sh in directory with your Key file
 # 6:Close AutoDepOne.sh when it gets to the end of the code.
-# 7:Run AutoDepTwo.sh
+# 7:Run AutoDepTwo.sh in directory with your Key file
 # After following these steps, your website should be online at the AWS Public IP. Enjoy!
