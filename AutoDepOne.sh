@@ -4,14 +4,14 @@ source "$MYDIR"/config.cfg
 chmod 400 $KEYNAME.pem
 ssh -T -i "$KEYNAME.pem" ubuntu@ec2-$IPDASH.us-east-2.compute.amazonaws.com <<EOF
     sudo apt-get update;
-    yes | sudo apt-get install python-pip python-dev nginx git
+    yes | sudo apt-get install python3-pip python3-dev nginx git
     sudo apt-get update;
     sudo pip install virtualenv;
     git clone $GITURL.git;
     cd $REPONAME;
     virtualenv venv;
     source venv/bin/activate;
-    cat requirements.txt | xargs -n 1 pip install
+    cat req.txt | xargs -n 1 pip install
     pip install django bcrypt django-extensions
     pip install gunicorn
     cd $PROJNAME
